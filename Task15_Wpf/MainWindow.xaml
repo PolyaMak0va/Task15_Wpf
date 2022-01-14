@@ -1,0 +1,314 @@
+﻿<Window x:Class="Task15_Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task15_Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image Source="Data\1.png" Stretch="UniformToFill" RenderOptions.BitmapScalingMode="HighQuality" Opacity="0.75"/>
+        
+        <FlowDocumentReader x:Name="docFDR" Style="{StaticResource flowDocumentReader}">
+
+            <FlowDocument Style="{StaticResource flowDocument}">
+
+                <Paragraph Style="{StaticResource paragraphParent}">
+                    <Bold>
+                        <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B8%D0%B7%D0%BC">Импрессионизм</Hyperlink>
+                    </Bold>
+                </Paragraph>
+                
+                <Section Style="{StaticResource section}">
+                    <Paragraph >
+                        <Bold>Импрессионизм</Bold>
+                        <Italic>(фр. impressionnisme ← impression «впечатление»)</Italic> — одно из крупнейших течений в искусстве последней трети XIX — начала XX веков, зародившееся во Франции и затем распространившееся по всему миру.
+                    </Paragraph>
+
+                    <Paragraph>
+                        Основой импрессионистического метода, который можно охарактеризовать как
+                        <Floater Style="{StaticResource floater}">
+                            <BlockUIContainer>
+                                <Image Source="Data\2.jpg" Style="{StaticResource image}"/>
+                            </BlockUIContainer>
+                            <BlockUIContainer>
+                                <TextBlock Text="К. Моне. Камилла Моне с сыном Жаном" 
+                                           Style="{StaticResource txtBlock}"/>
+                            </BlockUIContainer>
+                        </Floater>
+                        <Bold>
+                            <Italic>квинтэссенцию живописи</Italic>
+                        </Bold> , 
+                        является восприятие и изображение объектов окружающей художника действительности не автономно, а в отношениях к окружающей пространственной и световоздушной среде: рефлексах, бликах, тепло-холодных отношениях света и тени; шире —
+                        <Underline>
+                            <Italic>запечатлеть само пространство и время</Italic>
+                        </Underline> .
+                        В этом заключаются и сильные, и слабые стороны импрессионистического метода.
+                    </Paragraph>
+
+                </Section>
+                
+                <Paragraph Style="{StaticResource paragraphParent}" FontFamily="Italic">
+                    <Run Background="#FF8CABA7" Foreground="#FF9140C8">
+                        Особенности импрессионизма</Run>
+                </Paragraph>
+                
+                <List Style="{StaticResource list}">
+
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>конкретность места и времени действия.</Italic> На импрессионистских картинах всегда запечатлено мгновение
+                            <Run Background="#FF8CABA7">«здесь и сейчас»</Run>, с учётом освещения, времени суток, погоды, угла зрения;
+                            <LineBreak/>
+                            <Floater Style="{StaticResource floater}">
+                                <BlockUIContainer>
+                                    <Image Source="Data\3.jpg" Width="150" Height="200" Style="{StaticResource image}"/>
+                                </BlockUIContainer>
+                                <BlockUIContainer>
+                                    <TextBlock Text="Э. Дега. Звезда балета" 
+                                               Style="{StaticResource txtBlock}"/>
+                                </BlockUIContainer>
+                            </Floater>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>акцент на главное (с точки зрения художника).</Italic> Глядя на картины импрессионистов, зритель
+                            <Run Background="#FF8CABA7">словно бросает вместе с ним взгляд</Run> в толпу или на природу, выхватывая из реальности краски, силуэты, эмоции, образы — но не сосредотачиваясь на деталях;
+                            <LineBreak/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>сиюминутность.</Italic> Возникает ощущение, что мир на картине живёт, люди идут, реки текут — и через мгновение изображение изменится;
+                            <LineBreak/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>визуальные эффекты.</Italic> Это ощущение подчёркивают блики, мерцание, трепетание, дрожь, рябь и другие «маркеры» изменчивости;
+                            <LineBreak/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Italic>жизненность, будничность сюжетов.</Italic> Они отказались от традиционных академических сюжетов — исторических, мифологических, религиозных. Главными темами стали пейзажи и сцены из повседневной жизни.
+                            <LineBreak/>
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+                <Paragraph Style="{StaticResource paragraphParent}" FontFamily="Italic">
+                    <Run Background="#FF8CABA7" Foreground="#FF9140C8">
+                        Техника</Run>
+                </Paragraph>
+
+                <Section Style="{StaticResource section}">
+
+                    <Paragraph>
+                        Новое течение отличалось от академической живописи как в техническом, так и в идейном плане.
+                        <LineBreak/>
+                        В первую очередь импрессионисты отказались от контура,
+                        <Run Background="#FF8CABA7"> заменив его мелкими раздельными и контрастными мазками,</Run>  которые они накладывали в соответствии
+                        <Bold>с теориями цвета Шеврёля, Гельмгольца и Руда.</Bold>
+                        <LineBreak/>
+                        Солнечный луч расщепляется на составляющие: фиолетовый, синий, голубой, зелёный, жёлтый, оранжевый, красный, но поскольку синий — разновидность голубого, то их число сводится к шести. Две положенные рядом краски усиливают друг друга и, наоборот, при смешении они утрачивают интенсивность. К тому же все цвета разделены на первичные, или основные, и сдвоенные, или производные, при этом каждая сдвоенная краска является дополнительной по отношению к первой:
+                    </Paragraph>
+
+                    <List Style="{StaticResource list}">
+                        <ListItem>
+                            <Paragraph>
+                               голубой — оранжевый
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                красный — зелёный
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                жёлтый — фиолетовый
+                            </Paragraph>
+                        </ListItem>
+                    </List>
+
+                    <Paragraph>
+                        Таким образом стало возможным не смешивать краски на палитре и получать нужный цвет путём правильного наложения их на холст. Это же впоследствии стало поводом
+                        <Underline>
+                            <Italic>для отказа от чёрного.</Italic> </Underline> 
+                    </Paragraph>
+
+                    <Paragraph>
+                        В целом, в стиле импрессионизма работало множество мастеров, но основой движения были
+                        <Bold>Эдуард Мане, Клод Моне, Огюст Ренуар, Эдгар Дега, Альфред Сислей, Камиль Писсарро, Фредерик Базиль и Берта Моризо.</Bold>  
+                        Однако Мане всегда называл себя «независимым художником» и никогда не участвовал в выставках, а Дега хоть и участвовал, но никогда не писал свои работы на пленэре.
+                    </Paragraph>
+
+                </Section>
+
+                <Paragraph Style="{StaticResource paragraphParent}" FontFamily="Italic">
+                    <Run Background="#FFDAD4F9" Foreground="#FF9140C8">
+                        Известные импрессионисты</Run>
+                </Paragraph>
+
+                <Section Style="{StaticResource section}">
+
+                    <Table Style="{StaticResource table}">
+                        <Table.Columns>
+                            <TableColumn Width="110"/>
+                            <TableColumn Width="110"/>
+                            <TableColumn/>
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow FontSize="12">
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">
+                                        <Bold>Художник-импрессионист</Bold> </Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">
+                                        <Bold>Годы жизни</Bold> </Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">
+                                        <Bold>Вклад в движение импрессионизма</Bold> </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            
+                            <TableRow FontSize="12">
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">
+                                        <Italic>Эдуард Мане</Italic> </Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">1832-1883 гг.</Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Left" Margin="1">Переосмысливая образы и сюжеты старых мастеров в духе современности, он вводит в искусство жизнь современной ему Франции. В последних работах Мане всё чаще обращается к планерной живописи. Работы Э. Мане: "Завтрак на траве" (1863), "Музыка в саду Тюильри" (1862), "Бар в Фоли-Бержер" (1882), "Дом в Руели" (1882)</Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow FontSize="12">
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">
+                                        <Italic>Пьер Огюст Ренуар</Italic> </Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">1841-1919 гг.</Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Left" Margin="1">Художник, в творчестве которого значительное место занимают портреты и жанровые композиции, чаще всего раскрывающие образы французских женщин. Его работы: "Харчевня матушки Антони" (1866), "Купание на Сене" (1869), "Портрет актрисы Жанны Самари" (1878) </Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow FontSize="12">
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">
+                                        <Italic>Эдгар Дега</Italic></Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">1834-1917 гг.</Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Left" Margin="1">Художник-импрессионист, не обращавшийся к пейзажу. Тематика его картин - это изображение жизни театра и ипподрома, женщин за туалетом и сцен труда. Наиболее яркие работы Дега: "Урок танцев" (1874), "Площадь согласия" (1875), "Абсент" (1876), "Голубые танцовщицы" (1897)</Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow FontSize="12">
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">
+                                        <Italic>Клод Оскар Моне</Italic></Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">1840-1926 гг.</Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Left" Margin="1">Один из основоположников импрессионизма. От наименования его пейзажа "Впечатление. Восходящее солнце" произошло название импрессионизма. Средствами пленэрной живописи Моне прекрасно передаёт в своих картинах изменчивость световоздушной среды. Его работы: "Завтрак на траве" (1866), серия "Руанские соборы" (1893-1895 гг.), "Темза, здание парламента" (1904)</Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow FontSize="12">
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">
+                                        <Italic>Камиль Писсаро</Italic>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">1830-1903 гг.</Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Left" Margin="1">Ведущий мастер импрессионизма, раскрывший в сельских пейзажах очарование природы Франции. Гоордские пейзажи Писсаро отличаются большой выразительностью композиции. Наиболее значительные произведения Писсаро "Вспаханная земля" (1874), "Тачка" (1879), "Бульвар Монмартр в Париже" (1897), "Вид на Руан" (1898)</Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow FontSize="12">
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">
+                                        <Italic>Альфред Сислей</Italic>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Center">1839-1899 гг.</Paragraph>
+                                </TableCell>
+                                <TableCell Style="{StaticResource tableCell}">
+                                    <Paragraph TextAlignment="Left" Margin="1">Французский живописец. Его пейзажи окрестностей Парижа, наполненные светом и воздухом, отмечены токим лиризмом. Его работы: "Маленькая площадь в Аржантее" (1872), "Деревня на берегу Сены" (1872), "Морозы в Лувесьене" (1873)</Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table>
+                </Section>
+
+                <Section Style="{StaticResource section}">
+                    <Paragraph Style="{StaticResource paragraphParent}" FontFamily="Italic">
+                        <Run Background="#FF77A4BC" Foreground="#FF9140C8">Галерея картин представленных художников</Run></Paragraph>
+                    <BlockUIContainer>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+
+                            </Grid.RowDefinitions>
+                            <Image Source="Data/4.jpg" Style="{StaticResource image}" Grid.Column="0" Grid.Row="0"/>
+                            <TextBlock Text="Э. Дега. Голубые танцовщицы" Style="{StaticResource txtBlock}" Grid.Column="0" Grid.Row="1"/>
+                            <Image Source="Data/5.jpg" Style="{StaticResource image}" Grid.Column="1" Grid.Row="0"/>
+                            <TextBlock Text="Э. Мане. Бар 'Фоли-Бержер'" Style="{StaticResource txtBlock}" Grid.Column="1" Grid.Row="1"/>
+                            <Image Source="Data/6.jpg" Style="{StaticResource image}" Grid.Column="0" Grid.Row="2"/>
+                            <TextBlock Text="П. О. Ренуар. Бал в Мулен де ла Галетт" Style="{StaticResource txtBlock}" Grid.Column="0" Grid.Row="3"/>
+                            <Image Source="Data/7.jpg" Style="{StaticResource image}" Grid.Column="1" Grid.Row="2"/>
+                            <TextBlock Text="П. Камиль. Бульвар Монмантр ночью" Style="{StaticResource txtBlock}" Grid.Column="1" Grid.Row="3"/>
+                            <Image Source="Data/8.jpg" Style="{StaticResource image}" Grid.Column="0" Grid.Row="4"/>
+                            <TextBlock Text="К. Моне. Осень" Style="{StaticResource txtBlock}" Grid.Column="0" Grid.Row="5"/>
+                            <Image Source="Data/9.jpg" Style="{StaticResource image}" Grid.Column="1" Grid.Row="4"/>
+                            <TextBlock Text="A. Сислей. Мост Море летом" Style="{StaticResource txtBlock}" Grid.Column="1" Grid.Row="5"/>
+                        </Grid>
+                    </BlockUIContainer>
+
+                    <BlockUIContainer>
+
+                    </BlockUIContainer>
+                </Section>
+            </FlowDocument>
+        </FlowDocumentReader>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Background="#FFF1B6B6">
+            <Button Content="Открыть" Style="{StaticResource button}" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Style="{StaticResource button}" Click="Button_Click_1" />
+            <Button Style="{StaticResource button}" Width="30">
+                <Image Source="Data/10.jpg" Width="20" Height="20" Style="{StaticResource image}"/>
+            </Button>
+            <TextBlock Text="Нажми сердечко, если понравилась статья" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
